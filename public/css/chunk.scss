@@ -1,0 +1,13 @@
+
+@font-face{
+	font-family:'NotoSansThin';
+	src:url('../fonts/NotoSansCJKsc-Thin.otf');
+}
+html,body{
+	
+	overflow: hidden;
+	box-sizing:border-box;
+	// font-family: Helvetica, Arial, "微软雅黑", sans-serif;
+	font-family:'NotoSansThin',Helvetica, Arial, "微软雅黑", sans-serif;
+	font-size:1.2em;
+}

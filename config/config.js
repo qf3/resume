@@ -1,0 +1,86 @@
+export default {
+	Tag:['自我介绍','求职意向','个人技能','项目经历','教育经历','工作经历','PDF简历'],
+	Page0:{
+		greetings:'您好，我是张群飞正在寻找一份关于前端开发的工作',
+		title:'首页',
+		content:[
+				'public_zhang@163.com',
+				'https://github.com/qf3'
+		]
+	},
+	Page1:{
+		title:'求职意向',
+		content:['前端工程师','Web开发工程师']
+	},
+	Page2:{
+		title:'个人技能',
+		content:[
+		'HTML','HTML5','EJS',
+		'CSS','CSS3','SASS','PostCSS',"CSS-Modules",
+		'JavaScript','ES6/7','Babel',
+		'JQuery',
+		'Bootstrap','Semantic-UI',
+		'React','React-Router','Redux',
+		'Vue','Vue-Router','Vuex',
+		'WebPack','Gulp',
+		'Node.js','Express','Koa',
+		'Mongodb',
+		'Git',
+		'MarkDown'
+		]
+	},
+	Page3:{
+
+		title:'项目经历',
+		content:[
+			[
+				'resume-template',
+				'jQuery,SASS',
+				'https://github.com/qf3/resume-template.git',
+				'/src/projects/resume-template/index.html'
+			],
+			[
+				'card-games-vocabulary',
+				'React,Redux',
+				'https://github.com/qf3/card-games-vocabulary.git',
+				'/src/projects/card-games-vocabulary/index.html'
+			],
+			[	
+				'resume',
+				'Vue,Vue-Router',
+				'https://github.com/qf3/resume.git',
+				'none'
+			],
+			[
+				'blog-system',
+				'Mongodb,Express,EJS,Semantic-UI',
+				'https://github.com/qf3/blog-system.git',
+				'none'
+			]
+		]
+	
+	},
+	Page4:{
+
+		title:'教育经历',
+		content:{
+			first:[
+				'2010-2014',
+				'北京工商大学（本科）',
+				'专业：信息工程'
+			]
+		}
+	},
+	Page5:{
+
+		title:'工作经历',
+		content:{
+			first:[
+				'2014-2015',
+				'北京市海淀区上庄镇',
+				'职位：村委会主任助理'
+			]
+		}
+	
+	}
+}

@@ -1,0 +1,145 @@
+// @import '/node_modules/normalize.css/normalize.css';
+// @import './font-awesome/css/font-awesome.min.css';
+// /public/css/font-awesome/scss/font-awesome.scss
+
+$backGroundColor: rgb(34,34,34);
+$fontColor: rgb(221,221,221);
+$ahoverColor:rgb(102,102,153);
+%flexColumn{
+
+	display:flex;
+	flex-direction:column;
+}
+// @font-face{
+// 	font-family:'NotoSansThin';
+// 	src:url('/public/css/fonts/NotoSansCJKsc-Thin.otf');
+// }
+@font-face {font-family: 'webfont';
+  src: url('//at.alicdn.com/t/xjvk7r6jzky8ehfr.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/xjvk7r6jzky8ehfr.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/xjvk7r6jzky8ehfr.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/xjvk7r6jzky8ehfr.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/xjvk7r6jzky8ehfr.svg#思源黑体-细') format('svg'); /* iOS 4.1- */
+}
+
+
+html,body{
+	
+	overflow: hidden;
+	background-color:$backGroundColor;
+	color:$fontColor;
+	box-sizing:border-box;
+	// font-family:'NotoSansThin',Helvetica, Arial, "微软雅黑", sans-serif;
+	font-family:'webfont',Helvetica, Arial, "微软雅黑", sans-serif;
+	font-size:1.2em;
+}
+
+
+h1,h2,p{
+	// font-weight:normal;
+}
+ul,li{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+a{
+	color:$fontColor;
+	text-decoration:none;
+	&:hover{
+		color:$ahoverColor;
+	}
+}
+
+.iconfont{
+	margin-right:0.6em;
+}
+
+
+.page{
+	/* border:1px solid red; */
+	position:relative;
+	height: 100vh;
+	width: 100%;
+	@extend %flexColumn;
+	justify-content: center;
+	align-items: center; 
+	.content{
+		text-align: center;
+	}
+	.title{
+		text-align: center;
+		width: 70vw;
+	}
+	/* page5 and page6 */ 
+	.content56{
+		// border:1px solid red;
+		// width:45vw;
+		display:flex;
+		justify-content:space-around;
+		.others{
+			margin-left: 4em;
+		}
+
+	}
+}
+
+
+/* Nexus 7 Landscape*/
+@media screen and (max-width:960px) and (max-height:600px){
+	html,body{
+		font-size:1.1em;
+	}	
+}
+
+
+@media screen and (max-width:950px){
+	html,body{
+		font-size:1em;
+	}
+}
+
+
+/* iPhone 6 Landscape*/
+@media screen and (max-width:667px) and (max-height:375px){
+	html,body{
+		font-size:0.9em;
+	}	
+}
+
+
+/* iPhone 5 Landscape*/
+@media screen and (max-width:568px) and (max-height:320px){
+	html,body{
+		font-size:0.85em;
+	}	
+}
+
+@media screen and (max-width:414px){
+	.page{
+		.content56{
+			display: block;
+			text-align: center;
+			.others{
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:360px){
+	html,body{
+		font-size:0.9em;
+	}	
+}
+
+@media screen and (max-width:320px){
+	html,body{
+		font-size:0.85em;
+	}	
+}
+
+
+
+
+
